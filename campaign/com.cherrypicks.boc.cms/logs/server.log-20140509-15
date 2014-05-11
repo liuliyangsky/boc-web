@@ -1,0 +1,13 @@
+[INFO ][2014-05-09 15:06:30,156][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:1 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-05-09 15:06:30,163][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-05-09 15:06:30,164][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-05-09 15:06:30,178][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:7 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-05-09 15:06:30,320][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:1 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-05-09 15:06:30,328][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-05-09 15:06:30,328][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-05-09 15:06:30,338][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:7 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-05-09 15:06:32,675][com.cherrypicks.boc.dao.impl.SystemFunctionDaoImpl] - result size:7 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_FUNCTION
+[INFO ][2014-05-09 15:10:31,018][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:1 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-05-09 15:10:31,023][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-05-09 15:10:31,023][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-05-09 15:10:31,033][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:7 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1

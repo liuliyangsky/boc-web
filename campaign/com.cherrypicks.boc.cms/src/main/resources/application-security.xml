@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans 
+    xmlns="http://www.springframework.org/schema/security"
+    xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd 
+        http://www.springframework.org/schema/security
+        http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+    <http pattern="/login.jsp*" security="none"/>
+    
+    <http auto-config="false">
+        <intercept-url pattern="/auth/**" access="ROLE_ANONYMOUS, ROLE_AUTHENTICATED" requires-channel="http"/>
+        <intercept-url pattern="/isomorphic/IDACall*" access="ROLE_AUTHENTICATED"/>
+        <intercept-url pattern="/index.jsp" access="ROLE_AUTHENTICATED" requires-channel="http"/>
+        <intercept-url pattern="/isomorphic/**" access="ROLE_ANONYMOUS, ROLE_AUTHENTICATED"/>
+        <intercept-url pattern="/images/**" access="ROLE_ANONYMOUS, ROLE_AUTHENTICATED"/>
+        <intercept-url pattern="/js/**" access="ROLE_ANONYMOUS, ROLE_AUTHENTICATED"/>
+        <intercept-url pattern="/**" access="ROLE_AUTHENTICATED"/>
+        <form-login login-page="/login.jsp" authentication-success-handler-ref="cmsAuthenticationHandler"
+             authentication-failure-handler-ref="cmsAuthenticationHandler" />
+        <logout logout-url="/j_spring_security_logout" logout-success-url="/login.jsp"/>
+    </http>
+
+    
+	<beans:bean id="cmsAuthenticationHandler" class="com.cherrypicks.boc.cms.security.CmsAuthenticationHandler"/>
+    
+    <authentication-manager alias="cmsAuthenticationManager">
+        <authentication-provider ref="cmsAuthProvider"/>
+    </authentication-manager>
+    
+    <beans:bean id="cmsAuthProvider" class="com.cherrypicks.boc.cms.security.CmsAuthenticationProvider" />
+    
+</beans:beans>

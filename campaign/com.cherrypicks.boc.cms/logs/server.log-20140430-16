@@ -1,0 +1,347 @@
+[INFO ][2014-04-30 16:01:28,121][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - destroy
+[INFO ][2014-04-30 16:01:28,122][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - destroy
+[INFO ][2014-04-30 16:01:28,123][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - destroy
+[INFO ][2014-04-30 16:01:28,123][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - destroy
+[INFO ][2014-04-30 16:01:28,123][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - destroy
+[INFO ][2014-04-30 16:01:28,123][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - destroy
+[INFO ][2014-04-30 16:01:28,123][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - destroy
+[INFO ][2014-04-30 16:01:28,124][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - destroy
+[INFO ][2014-04-30 16:01:28,124][com.cherrypicks.boc.dao.impl.SystemFunctionDaoImpl] - destroy
+[INFO ][2014-04-30 16:01:28,654][org.springframework.security.core.SpringSecurityCoreVersion] - You are running with Spring Security Core 3.1.1.RELEASE
+[INFO ][2014-04-30 16:01:28,654][org.springframework.security.config.SecurityNamespaceHandler] - Spring Security 'config' module version is 3.1.1.RELEASE
+[INFO ][2014-04-30 16:01:28,690][org.springframework.security.config.http.HttpSecurityBeanDefinitionParser] - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.access.channel.ChannelProcessingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 100, Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+[INFO ][2014-04-30 16:01:28,901][com.mchange.v2.log.MLog] - MLog clients using log4j logging.
+[INFO ][2014-04-30 16:01:28,940][com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO ][2014-04-30 16:01:29,348][com.cherrypicks.boc.dao.impl.SystemFunctionDaoImpl] - init
+[INFO ][2014-04-30 16:01:29,390][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - init
+[INFO ][2014-04-30 16:01:29,414][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - init
+[INFO ][2014-04-30 16:01:29,438][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - init
+[INFO ][2014-04-30 16:01:29,459][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - init
+[INFO ][2014-04-30 16:01:29,482][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - init
+[INFO ][2014-04-30 16:01:29,497][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - init
+[INFO ][2014-04-30 16:01:29,511][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - init
+[INFO ][2014-04-30 16:01:29,527][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - init
+[INFO ][2014-04-30 16:01:29,728][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: Ant [pattern='/login.jsp*'], []
+[INFO ][2014-04-30 16:01:29,839][org.springframework.security.web.access.channel.ChannelProcessingFilter] - Validated configuration attributes
+[INFO ][2014-04-30 16:01:30,122][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.access.channel.ChannelProcessingFilter@35957bfa, org.springframework.security.web.context.SecurityContextPersistenceFilter@68fe7591, org.springframework.security.web.authentication.logout.LogoutFilter@19d8b871, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@63350ff8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30ab95aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50eee4dc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73f35106, org.springframework.security.web.session.SessionManagementFilter@6b4c9c62, org.springframework.security.web.access.ExceptionTranslationFilter@72af1cf6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4696954c]
+[INFO ][2014-04-30 16:01:30,145][org.springframework.security.config.http.DefaultFilterChainValidator] - Checking whether login URL '/login.jsp' is accessible with your configuration
+[INFO ][2014-04-30 16:05:47,093][org.springframework.security.core.SpringSecurityCoreVersion] - You are running with Spring Security Core 3.1.1.RELEASE
+[INFO ][2014-04-30 16:05:47,093][org.springframework.security.config.SecurityNamespaceHandler] - Spring Security 'config' module version is 3.1.1.RELEASE
+[INFO ][2014-04-30 16:05:47,167][org.springframework.security.config.http.HttpSecurityBeanDefinitionParser] - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.access.channel.ChannelProcessingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 100, Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+[INFO ][2014-04-30 16:05:47,439][com.mchange.v2.log.MLog] - MLog clients using log4j logging.
+[INFO ][2014-04-30 16:05:47,522][com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO ][2014-04-30 16:05:48,044][com.cherrypicks.boc.dao.impl.SystemFunctionDaoImpl] - init
+[INFO ][2014-04-30 16:05:48,086][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - init
+[INFO ][2014-04-30 16:05:48,110][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - init
+[INFO ][2014-04-30 16:05:48,129][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - init
+[INFO ][2014-04-30 16:05:48,148][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - init
+[INFO ][2014-04-30 16:05:48,168][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - init
+[INFO ][2014-04-30 16:05:48,196][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - init
+[INFO ][2014-04-30 16:05:48,218][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - init
+[INFO ][2014-04-30 16:05:48,233][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - init
+[INFO ][2014-04-30 16:05:48,400][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: Ant [pattern='/login.jsp*'], []
+[INFO ][2014-04-30 16:05:48,484][org.springframework.security.web.access.channel.ChannelProcessingFilter] - Validated configuration attributes
+[INFO ][2014-04-30 16:05:48,707][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.access.channel.ChannelProcessingFilter@27f33aef, org.springframework.security.web.context.SecurityContextPersistenceFilter@51a23566, org.springframework.security.web.authentication.logout.LogoutFilter@705fe568, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@27ce487b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57f897a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ac8210, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@648ee94b, org.springframework.security.web.session.SessionManagementFilter@62766e80, org.springframework.security.web.access.ExceptionTranslationFilter@4d50c800, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@727a9fa7]
+[INFO ][2014-04-30 16:05:48,726][org.springframework.security.config.http.DefaultFilterChainValidator] - Checking whether login URL '/login.jsp' is accessible with your configuration
+[INFO ][2014-04-30 16:06:00,454][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bwm7h6911daodp6r64d26|248a4156, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.ibm.db2.jcc.DB2Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bwm7h6911daodp6r64d26|248a4156, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:db2://office2.cherrypicks.com:38500/SM_MBA, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 6000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 20, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO ][2014-04-30 16:06:02,029][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:1 sql:select r.* from BOC_CAMPAIGN.SYSTEM_ROLE r, BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP map, BOC_CAMPAIGN.SYSTEM_USER u where map.ROLE_ID = r.ID and map.USER_ID = u.ID and u.USER_NAME = 'admin'
+[INFO ][2014-04-30 16:06:03,081][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID in (:roleIds) 
+[INFO ][2014-04-30 16:06:07,716][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-30 16:06:07,773][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:06:07,879][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-30 16:06:08,166][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[WARN ][2014-04-30 16:06:20,434][com.mchange.v2.async.ThreadPoolAsynchronousRunner] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@50ec2522 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+[WARN ][2014-04-30 16:06:20,437][com.mchange.v2.async.ThreadPoolAsynchronousRunner] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@50ec2522 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@49918c8f (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@72a32604 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@35150b68 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@789ff411
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@4d50c5f5
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@71f47f7a
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6add5d08
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6b06ef07
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1436eb76
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@219c9a58
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@305918a5
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@2961116f
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@23bfa3a2
+		com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@7a8ff303
+		com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@9b88d2
+		com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@6333934d
+		com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@4f0bd71c
+		com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@125797cf
+		com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@34afa071
+		com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@764e75bc
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.net.SocketInputStream.socketRead0(Native Method)
+		java.net.SocketInputStream.read(SocketInputStream.java:129)
+		com.ibm.db2.jcc.t4.x.b(x.java:208)
+		com.ibm.db2.jcc.t4.x.c(x.java:360)
+		com.ibm.db2.jcc.t4.x.c(x.java:473)
+		com.ibm.db2.jcc.t4.x.v(x.java:1241)
+		com.ibm.db2.jcc.t4.y.c(y.java:137)
+		com.ibm.db2.jcc.t4.b.k(b.java:1380)
+		com.ibm.db2.jcc.t4.b.b(b.java:1293)
+		com.ibm.db2.jcc.t4.b.a(b.java:6384)
+		com.ibm.db2.jcc.t4.b.b(b.java:843)
+		com.ibm.db2.jcc.t4.b.a(b.java:760)
+		com.ibm.db2.jcc.t4.b.a(b.java:421)
+		com.ibm.db2.jcc.t4.b.a(b.java:396)
+		com.ibm.db2.jcc.t4.b.<init>(b.java:334)
+		com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:232)
+		com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:198)
+		com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:475)
+		com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:116)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.net.SocketInputStream.socketRead0(Native Method)
+		java.net.SocketInputStream.read(SocketInputStream.java:129)
+		com.ibm.db2.jcc.t4.x.b(x.java:208)
+		com.ibm.db2.jcc.t4.x.c(x.java:360)
+		com.ibm.db2.jcc.t4.x.c(x.java:473)
+		com.ibm.db2.jcc.t4.x.v(x.java:1241)
+		com.ibm.db2.jcc.t4.y.c(y.java:137)
+		com.ibm.db2.jcc.t4.b.k(b.java:1380)
+		com.ibm.db2.jcc.t4.b.b(b.java:1293)
+		com.ibm.db2.jcc.t4.b.a(b.java:6384)
+		com.ibm.db2.jcc.t4.b.b(b.java:843)
+		com.ibm.db2.jcc.t4.b.a(b.java:760)
+		com.ibm.db2.jcc.t4.b.a(b.java:421)
+		com.ibm.db2.jcc.t4.b.a(b.java:396)
+		com.ibm.db2.jcc.t4.b.<init>(b.java:334)
+		com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:232)
+		com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:198)
+		com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:475)
+		com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:116)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.net.SocketInputStream.socketRead0(Native Method)
+		java.net.SocketInputStream.read(SocketInputStream.java:129)
+		com.ibm.db2.jcc.t4.x.b(x.java:208)
+		com.ibm.db2.jcc.t4.x.c(x.java:360)
+		com.ibm.db2.jcc.t4.x.c(x.java:473)
+		com.ibm.db2.jcc.t4.x.v(x.java:1241)
+		com.ibm.db2.jcc.t4.y.c(y.java:137)
+		com.ibm.db2.jcc.t4.b.k(b.java:1380)
+		com.ibm.db2.jcc.t4.b.b(b.java:1293)
+		com.ibm.db2.jcc.t4.b.a(b.java:6384)
+		com.ibm.db2.jcc.t4.b.b(b.java:843)
+		com.ibm.db2.jcc.t4.b.a(b.java:760)
+		com.ibm.db2.jcc.t4.b.a(b.java:421)
+		com.ibm.db2.jcc.t4.b.a(b.java:396)
+		com.ibm.db2.jcc.t4.b.<init>(b.java:334)
+		com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:232)
+		com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:198)
+		com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:475)
+		com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:116)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+[INFO ][2014-04-30 16:06:22,271][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:06:22,307][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:06:22,485][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:06:22,530][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:06:22,712][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:06:22,792][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:06:23,062][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:06:23,644][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:06:26,872][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:06:27,065][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:06:30,236][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:06:30,458][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:06:32,839][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:06:34,679][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-30 16:06:34,993][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-30 16:06:38,204][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:08:16,268][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:08:16,374][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:08:18,701][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:08:40,182][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:09:23,856][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-30 16:09:24,002][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:09:24,014][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:09:24,126][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:09:24,318][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-30 16:09:24,355][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:09:24,566][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:09:24,600][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:09:24,837][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:09:24,852][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:09:26,823][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:09:27,242][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:09:37,652][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:09:37,753][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:09:39,968][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - updatedCount:1 sql:UPDATE BOC_CAMPAIGN.ACTIVITY SET CREATED_TIME='2014-04-29 18:49:58', END_DATE='2014-04-29 00:00:00', IS_DELETED=0, START_DATE='2014-04-29 00:00:00', STATUS=1, UPDATED_TIME='2014-04-30 16:09:39' WHERE ID='8' 
+[INFO ][2014-04-30 16:09:40,269][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:10:36,570][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-30 16:10:36,622][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-30 16:10:40,555][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:10:40,749][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:12:20,207][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:15:28,807][org.springframework.security.core.SpringSecurityCoreVersion] - You are running with Spring Security Core 3.1.1.RELEASE
+[INFO ][2014-04-30 16:15:28,807][org.springframework.security.config.SecurityNamespaceHandler] - Spring Security 'config' module version is 3.1.1.RELEASE
+[INFO ][2014-04-30 16:15:28,871][org.springframework.security.config.http.HttpSecurityBeanDefinitionParser] - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.access.channel.ChannelProcessingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 100, Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+[INFO ][2014-04-30 16:15:29,172][com.mchange.v2.log.MLog] - MLog clients using log4j logging.
+[INFO ][2014-04-30 16:15:29,244][com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO ][2014-04-30 16:15:29,738][com.cherrypicks.boc.dao.impl.SystemFunctionDaoImpl] - init
+[INFO ][2014-04-30 16:15:29,773][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - init
+[INFO ][2014-04-30 16:15:29,789][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - init
+[INFO ][2014-04-30 16:15:29,810][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - init
+[INFO ][2014-04-30 16:15:29,827][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - init
+[INFO ][2014-04-30 16:15:29,848][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - init
+[INFO ][2014-04-30 16:15:29,869][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - init
+[INFO ][2014-04-30 16:15:29,897][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - init
+[INFO ][2014-04-30 16:15:29,917][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - init
+[INFO ][2014-04-30 16:15:30,099][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: Ant [pattern='/login.jsp*'], []
+[INFO ][2014-04-30 16:15:30,198][org.springframework.security.web.access.channel.ChannelProcessingFilter] - Validated configuration attributes
+[INFO ][2014-04-30 16:15:30,426][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.access.channel.ChannelProcessingFilter@37176e8a, org.springframework.security.web.context.SecurityContextPersistenceFilter@635a4247, org.springframework.security.web.authentication.logout.LogoutFilter@3ab57646, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f680bc6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27dd2519, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27aea0c1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39bbf341, org.springframework.security.web.session.SessionManagementFilter@625f4e03, org.springframework.security.web.access.ExceptionTranslationFilter@5efad969, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@26d7ad36]
+[INFO ][2014-04-30 16:15:30,444][org.springframework.security.config.http.DefaultFilterChainValidator] - Checking whether login URL '/login.jsp' is accessible with your configuration
+[INFO ][2014-04-30 16:15:40,088][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bwm7h6911db0uk21up2ptj|1e94b0ca, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.ibm.db2.jcc.DB2Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bwm7h6911db0uk21up2ptj|1e94b0ca, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:db2://office2.cherrypicks.com:38500/SM_MBA, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 6000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 20, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO ][2014-04-30 16:15:42,367][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:1 sql:select r.* from BOC_CAMPAIGN.SYSTEM_ROLE r, BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP map, BOC_CAMPAIGN.SYSTEM_USER u where map.ROLE_ID = r.ID and map.USER_ID = u.ID and u.USER_NAME = 'admin'
+[INFO ][2014-04-30 16:15:42,981][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID in (:roleIds) 
+[INFO ][2014-04-30 16:15:48,723][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:15:49,402][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:24:41,496][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:24:42,277][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:25:54,001][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-30 16:25:54,256][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-30 16:25:58,068][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:25:58,206][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:28:24,488][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:28:24,757][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:36:45,250][org.springframework.security.core.SpringSecurityCoreVersion] - You are running with Spring Security Core 3.1.1.RELEASE
+[INFO ][2014-04-30 16:36:45,250][org.springframework.security.config.SecurityNamespaceHandler] - Spring Security 'config' module version is 3.1.1.RELEASE
+[INFO ][2014-04-30 16:36:45,331][org.springframework.security.config.http.HttpSecurityBeanDefinitionParser] - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.access.channel.ChannelProcessingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 100, Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+[INFO ][2014-04-30 16:36:45,623][com.mchange.v2.log.MLog] - MLog clients using log4j logging.
+[INFO ][2014-04-30 16:36:45,706][com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO ][2014-04-30 16:36:46,206][com.cherrypicks.boc.dao.impl.SystemFunctionDaoImpl] - init
+[INFO ][2014-04-30 16:36:46,256][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - init
+[INFO ][2014-04-30 16:36:46,287][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - init
+[INFO ][2014-04-30 16:36:46,322][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - init
+[INFO ][2014-04-30 16:36:46,352][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - init
+[INFO ][2014-04-30 16:36:46,382][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - init
+[INFO ][2014-04-30 16:36:46,402][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - init
+[INFO ][2014-04-30 16:36:46,424][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - init
+[INFO ][2014-04-30 16:36:46,445][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - init
+[INFO ][2014-04-30 16:36:46,701][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: Ant [pattern='/login.jsp*'], []
+[INFO ][2014-04-30 16:36:46,814][org.springframework.security.web.access.channel.ChannelProcessingFilter] - Validated configuration attributes
+[INFO ][2014-04-30 16:36:47,064][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.access.channel.ChannelProcessingFilter@290e6c5e, org.springframework.security.web.context.SecurityContextPersistenceFilter@71eca460, org.springframework.security.web.authentication.logout.LogoutFilter@671bd50e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5440bf04, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66bccad2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74a7d5af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36be0ffe, org.springframework.security.web.session.SessionManagementFilter@780c08c5, org.springframework.security.web.access.ExceptionTranslationFilter@5e13fb15, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71c94ff3]
+[INFO ][2014-04-30 16:36:47,091][org.springframework.security.config.http.DefaultFilterChainValidator] - Checking whether login URL '/login.jsp' is accessible with your configuration
+[INFO ][2014-04-30 16:37:02,672][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bwm7h6911dbs7hb1wupf39|c351f6d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.ibm.db2.jcc.DB2Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bwm7h6911dbs7hb1wupf39|c351f6d, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:db2://office2.cherrypicks.com:38500/SM_MBA, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 6000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 20, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO ][2014-04-30 16:37:08,302][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:1 sql:select r.* from BOC_CAMPAIGN.SYSTEM_ROLE r, BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP map, BOC_CAMPAIGN.SYSTEM_USER u where map.ROLE_ID = r.ID and map.USER_ID = u.ID and u.USER_NAME = 'admin'
+[INFO ][2014-04-30 16:37:08,976][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID in (:roleIds) 
+[INFO ][2014-04-30 16:37:13,697][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-30 16:37:13,968][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:37:13,990][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:37:14,103][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-30 16:37:14,632][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:37:14,992][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:37:15,178][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:37:15,366][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:37:15,448][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:37:15,649][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:37:15,826][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:37:16,281][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-30 16:37:21,508][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:37:22,068][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:41:10,618][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:41:19,011][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:41:19,859][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:46:24,007][org.springframework.security.core.SpringSecurityCoreVersion] - You are running with Spring Security Core 3.1.1.RELEASE
+[INFO ][2014-04-30 16:46:24,008][org.springframework.security.config.SecurityNamespaceHandler] - Spring Security 'config' module version is 3.1.1.RELEASE
+[INFO ][2014-04-30 16:46:24,079][org.springframework.security.config.http.HttpSecurityBeanDefinitionParser] - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.access.channel.ChannelProcessingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 100, Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+[INFO ][2014-04-30 16:46:24,378][com.mchange.v2.log.MLog] - MLog clients using log4j logging.
+[INFO ][2014-04-30 16:46:24,454][com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO ][2014-04-30 16:46:24,991][com.cherrypicks.boc.dao.impl.SystemFunctionDaoImpl] - init
+[INFO ][2014-04-30 16:46:25,034][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - init
+[INFO ][2014-04-30 16:46:25,058][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - init
+[INFO ][2014-04-30 16:46:25,083][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - init
+[INFO ][2014-04-30 16:46:25,109][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - init
+[INFO ][2014-04-30 16:46:25,133][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - init
+[INFO ][2014-04-30 16:46:25,154][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - init
+[INFO ][2014-04-30 16:46:25,181][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - init
+[INFO ][2014-04-30 16:46:25,194][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - init
+[INFO ][2014-04-30 16:46:25,392][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: Ant [pattern='/login.jsp*'], []
+[INFO ][2014-04-30 16:46:25,465][org.springframework.security.web.access.channel.ChannelProcessingFilter] - Validated configuration attributes
+[INFO ][2014-04-30 16:46:25,712][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.access.channel.ChannelProcessingFilter@5b3409f, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b5789a5, org.springframework.security.web.authentication.logout.LogoutFilter@700dce12, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a543937, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f785762, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25b0eadd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20b6680, org.springframework.security.web.session.SessionManagementFilter@3a765e8c, org.springframework.security.web.access.ExceptionTranslationFilter@31395750, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b935e6f]
+[INFO ][2014-04-30 16:46:25,737][org.springframework.security.config.http.DefaultFilterChainValidator] - Checking whether login URL '/login.jsp' is accessible with your configuration
+[INFO ][2014-04-30 16:46:35,198][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bwm7h6911dc4m1rcbdjve|514ae5cd, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.ibm.db2.jcc.DB2Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bwm7h6911dc4m1rcbdjve|514ae5cd, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:db2://office2.cherrypicks.com:38500/SM_MBA, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 6000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 20, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO ][2014-04-30 16:46:36,249][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:1 sql:select r.* from BOC_CAMPAIGN.SYSTEM_ROLE r, BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP map, BOC_CAMPAIGN.SYSTEM_USER u where map.ROLE_ID = r.ID and map.USER_ID = u.ID and u.USER_NAME = 'admin'
+[INFO ][2014-04-30 16:46:36,575][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID in (:roleIds) 
+[INFO ][2014-04-30 16:46:43,251][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:46:43,407][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:46:48,104][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN WHERE ID in (:keys)
+[INFO ][2014-04-30 16:46:48,281][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - updatedCount:1 sql:DELETE FROM BOC_CAMPAIGN.CAMPAIGN WHERE ID = 1
+[INFO ][2014-04-30 16:46:51,381][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:46:52,363][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:46:53,135][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:50:43,533][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:50:43,719][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:51:58,131][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[WARN ][2014-04-30 16:52:57,315][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[INFO ][2014-04-30 16:52:57,729][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN WHERE ID in (:keys)
+[INFO ][2014-04-30 16:53:06,762][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - updatedCount:1 sql:DELETE FROM BOC_CAMPAIGN.CAMPAIGN WHERE ID = 2
+[INFO ][2014-04-30 16:53:40,541][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:53:41,890][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:53:42,718][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:53:43,657][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:53:44,363][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:53:44,802][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:53:45,918][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-04-30 16:59:27,397][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN

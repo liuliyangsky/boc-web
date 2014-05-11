@@ -1,0 +1,41 @@
+[INFO ][2014-04-29 19:02:42,723][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:02:48,665][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 19:02:48,799][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 19:02:48,961][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:02:49,082][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:02:49,297][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:02:49,443][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:02:49,683][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:02:49,870][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:02:50,109][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:02:50,138][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:02:51,879][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:02:53,166][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:02:53,391][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:02:57,267][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:02:58,858][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:03:01,198][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:03:02,121][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:03:04,386][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:03:06,066][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:03:07,095][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:03:12,136][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:04:14,362][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 19:04:14,585][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 19:04:14,769][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:04:14,961][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:04:15,015][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:04:15,181][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:04:15,251][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:04:15,391][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:04:15,460][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:04:15,657][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:04:16,881][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:04:16,899][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:04:17,008][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:04:17,023][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 19:04:17,264][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 19:04:17,264][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 19:04:17,267][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 19:04:17,581][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 19:04:17,967][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1

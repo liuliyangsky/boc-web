@@ -1,0 +1,670 @@
+[WARN ][2014-05-05 14:01:45,511][com.mchange.v2.async.ThreadPoolAsynchronousRunner] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@678c4430 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+[WARN ][2014-05-05 14:01:45,514][com.mchange.v2.async.ThreadPoolAsynchronousRunner] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@678c4430 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@1043d632 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@55a374f5 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@5e53acbf (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@47725ffa
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@25fb3abb
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@10ccde78
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@7a21a0e5
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@35ca5907
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@779af627
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@5e96b7c9
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@78fc1da2
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@6ffdb4bb
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@79649a6d
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@3bd6a85e
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@9c7d203
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@1dacc7f9
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@3a7cbba7
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@5303eef0
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@273bf924
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@5261be9b
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.net.SocketInputStream.socketRead0(Native Method)
+		java.net.SocketInputStream.read(SocketInputStream.java:129)
+		com.ibm.db2.jcc.t4.x.b(x.java:208)
+		com.ibm.db2.jcc.t4.x.c(x.java:360)
+		com.ibm.db2.jcc.t4.x.c(x.java:473)
+		com.ibm.db2.jcc.t4.x.v(x.java:1241)
+		com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+		com.ibm.db2.jcc.t4.p.e(p.java:81)
+		com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+		com.ibm.db2.jcc.am.io.jb(io.java:2322)
+		com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+		com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+		com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+		com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+		com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+		com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+		com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+		com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.net.SocketInputStream.socketRead0(Native Method)
+		java.net.SocketInputStream.read(SocketInputStream.java:129)
+		com.ibm.db2.jcc.t4.x.b(x.java:208)
+		com.ibm.db2.jcc.t4.x.c(x.java:360)
+		com.ibm.db2.jcc.t4.x.c(x.java:473)
+		com.ibm.db2.jcc.t4.x.v(x.java:1241)
+		com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+		com.ibm.db2.jcc.t4.p.e(p.java:81)
+		com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+		com.ibm.db2.jcc.am.io.jb(io.java:2322)
+		com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+		com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+		com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+		com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+		com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+		com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+		com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+		com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.net.SocketInputStream.socketRead0(Native Method)
+		java.net.SocketInputStream.read(SocketInputStream.java:129)
+		com.ibm.db2.jcc.t4.x.b(x.java:208)
+		com.ibm.db2.jcc.t4.x.c(x.java:360)
+		com.ibm.db2.jcc.t4.x.c(x.java:473)
+		com.ibm.db2.jcc.t4.x.v(x.java:1241)
+		com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+		com.ibm.db2.jcc.t4.p.e(p.java:81)
+		com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+		com.ibm.db2.jcc.am.io.jb(io.java:2322)
+		com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+		com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+		com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+		com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+		com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+		com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+		com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+		com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+[WARN ][2014-05-05 14:01:54,101][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:01:54,102][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:01:54,101][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:02:04,429][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:02:04,429][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:02:04,429][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:02:04,429][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:02:04,430][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:02:04,440][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:02:04,441][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:02:04,441][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:02:04,441][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:02:04,440][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:02:23,340][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[INFO ][2014-05-05 14:04:54,753][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 14:04:54,824][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 14:06:26,090][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 14:06:26,270][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 14:09:04,136][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 14:09:04,610][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 14:09:09,696][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 14:09:09,762][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 14:12:57,112][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 14:14:10,078][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 14:14:10,267][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 14:14:27,024][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 14:14:27,230][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 14:14:38,917][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN WHERE ID in (:keys)
+[INFO ][2014-05-05 14:14:39,027][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - updatedCount:1 sql:DELETE FROM BOC_CAMPAIGN.CAMPAIGN WHERE ID = 11
+[INFO ][2014-05-05 14:14:44,256][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 14:14:44,426][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 14:14:51,035][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 14:14:51,806][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 14:14:54,188][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 14:14:54,474][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 14:17:45,246][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 14:17:47,130][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 14:17:57,448][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 14:17:57,571][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 14:17:57,596][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 14:17:57,724][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 14:18:04,715][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 14:18:05,189][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 14:18:06,572][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 14:18:07,345][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 14:18:15,820][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 14:18:16,033][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 14:19:33,150][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 14:19:35,835][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 14:31:16,579][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 14:31:16,892][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 14:31:19,706][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 14:31:20,106][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 14:31:22,066][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 14:31:23,485][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 14:31:24,190][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 14:31:24,777][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[WARN ][2014-05-05 14:38:47,635][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-05-05 14:38:47,635][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[INFO ][2014-05-05 14:41:50,274][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - destroy
+[INFO ][2014-05-05 14:41:50,274][com.cherrypicks.boc.dao.impl.MerchantLangMapDaoImpl] - destroy
+[INFO ][2014-05-05 14:41:50,275][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - destroy
+[INFO ][2014-05-05 14:41:50,275][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - destroy
+[INFO ][2014-05-05 14:41:50,275][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - destroy
+[INFO ][2014-05-05 14:41:50,275][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - destroy
+[INFO ][2014-05-05 14:41:50,275][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - destroy
+[INFO ][2014-05-05 14:41:50,276][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - destroy
+[INFO ][2014-05-05 14:41:50,276][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - destroy
+[INFO ][2014-05-05 14:41:50,276][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - destroy
+[INFO ][2014-05-05 14:41:50,276][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - destroy
+[INFO ][2014-05-05 14:41:50,276][com.cherrypicks.boc.dao.impl.SystemFunctionDaoImpl] - destroy
+[INFO ][2014-05-05 14:41:50,822][org.springframework.security.core.SpringSecurityCoreVersion] - You are running with Spring Security Core 3.1.1.RELEASE
+[INFO ][2014-05-05 14:41:50,822][org.springframework.security.config.SecurityNamespaceHandler] - Spring Security 'config' module version is 3.1.1.RELEASE
+[INFO ][2014-05-05 14:41:50,856][org.springframework.security.config.http.HttpSecurityBeanDefinitionParser] - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.access.channel.ChannelProcessingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 100, Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+[INFO ][2014-05-05 14:41:51,076][com.mchange.v2.log.MLog] - MLog clients using log4j logging.
+[INFO ][2014-05-05 14:41:51,123][com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO ][2014-05-05 14:41:51,553][com.cherrypicks.boc.dao.impl.SystemFunctionDaoImpl] - init
+[INFO ][2014-05-05 14:41:51,597][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - init
+[INFO ][2014-05-05 14:41:51,620][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - init
+[INFO ][2014-05-05 14:41:51,645][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - init
+[INFO ][2014-05-05 14:41:51,666][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - init
+[INFO ][2014-05-05 14:41:51,707][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - init
+[INFO ][2014-05-05 14:41:51,733][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - init
+[INFO ][2014-05-05 14:41:51,754][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - init
+[INFO ][2014-05-05 14:41:51,774][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - init
+[INFO ][2014-05-05 14:41:51,794][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - init
+[INFO ][2014-05-05 14:41:51,816][com.cherrypicks.boc.dao.impl.MerchantLangMapDaoImpl] - init
+[INFO ][2014-05-05 14:41:51,836][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - init
+[INFO ][2014-05-05 14:41:52,115][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: Ant [pattern='/login.jsp*'], []
+[INFO ][2014-05-05 14:41:52,207][org.springframework.security.web.access.channel.ChannelProcessingFilter] - Validated configuration attributes
+[INFO ][2014-05-05 14:41:52,463][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.access.channel.ChannelProcessingFilter@6a32f206, org.springframework.security.web.context.SecurityContextPersistenceFilter@36af9e62, org.springframework.security.web.authentication.logout.LogoutFilter@43c74ffa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5253c8d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7aa748c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c9b8160, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@454b0589, org.springframework.security.web.session.SessionManagementFilter@405888e9, org.springframework.security.web.access.ExceptionTranslationFilter@748499ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d9a701c]
+[INFO ][2014-05-05 14:41:52,484][org.springframework.security.config.http.DefaultFilterChainValidator] - Checking whether login URL '/login.jsp' is accessible with your configuration

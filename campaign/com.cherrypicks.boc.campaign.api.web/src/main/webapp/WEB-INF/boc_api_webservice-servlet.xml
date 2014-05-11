@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+                              http://www.springframework.org/schema/beans/spring-beans-3.0.xsd   
+                              http://www.springframework.org/schema/context   
+                              http://www.springframework.org/schema/context/spring-context-3.0.xsd  
+                              http://www.springframework.org/schema/mvc   
+                              http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+                              http://www.springframework.org/schema/aop 
+                              http://www.springframework.org/schema/aop/spring-aop-3.1.xsd"
+	default-autowire="byName">
+
+	<!-- 扫描所有的controller -->
+	<context:component-scan base-package="com.cherrypicks.boc.api.web.controller" />
+
+	<!-- 祋图层转换器 -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+		<property name="contentType" value="text/html;charset=UTF-8" />
+	</bean>
+	
+	<!-- file upload-->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" p:defaultEncoding="utf-8">
+	   <!--  
+	   <property name="maxUploadSize" value="10000000"/>
+	   -->
+	</bean>
+
+	<!-- 用于前期测试阶段，production期间如发现慢，请开启 -->
+	<context:component-scan base-package="com.cherrypicks.boc.common.aop" />
+    <aop:config>
+		<!-- 切入点 -->
+		<aop:pointcut id="timePoint"  expression="execution(* com.cherrypicks.boc.api.web.controller.webservice.*.*(..))"></aop:pointcut>
+		<!-- 在该切入点使用自定义拦截器 -->
+		<aop:advisor pointcut-ref="timePoint" advice-ref="timeInterceptor" />
+    </aop:config>
+	<!-- 拦截器 -->
+	<!--<mvc:interceptors>
+		<mvc:interceptor>
+        	<bean class="com.cherrypicks.boc.api.inteceptors.Inteceptor" />  
+        </mvc:interceptor>    
+    </mvc:interceptors>  -->
+	
+	<!-- spring异常处理类 -->
+	<bean class="com.cherrypicks.boc.api.web.controller.WebHandlerExceptionResolver" />
+</beans>   

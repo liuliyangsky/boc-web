@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.1.xsd" >
+
+	<!-- c3p0 data source -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClass" value="${datasource.driverClassName}" />
+		<property name="jdbcUrl" value="${datasource.url}" />
+		<property name="user" value="${datasource.username}" />
+		<property name="password" value="${datasource.password}" />
+<!-- 		<property name="minPoolSize" value="${datasource.minPoolSize}" />
+		<property name="maxPoolSize" value="${datasource.maxPoolSize}" />
+		<property name="acquireRetryAttempts" value="${datasource.acquireRetryAttempts}" />
+		<property name="acquireRetryDelay" value="${datasource.acquireRetryDelay}" />
+		<property name="checkoutTimeout" value="${datasource.timeout}" />
+		<property name="maxStatements" value="${datasource.max_statement}" />
+		<property name="idleConnectionTestPeriod" value="${datasource.idle_test_period}" />
+		<property name="acquireIncrement" value="${datasource.acquireIncrement}" />
+		<property name="maxIdleTime" value="${datasource.maxIdleTime}" /> -->
+		<property name="idleConnectionTestPeriod" value="60" />
+		<property name="testConnectionOnCheckout" value="false" />
+		<property name="initialPoolSize" value="2" />
+		<property name="minPoolSize" value="20" />
+		<property name="maxPoolSize" value="100" />
+		<property name="acquireIncrement" value="1" />
+		<property name="acquireRetryAttempts" value="1" />
+		<property name="maxIdleTime" value="6000" />
+		<property name="maxStatements" value="0" />
+	</bean>
+	
+</beans>

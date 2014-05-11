@@ -1,0 +1,14 @@
+<DataSource ID="systemRoleDS" serverType="generic">
+    <fields>
+        <field name="id" type="long" title="Role ID" hidden="true" primaryKey="true" />
+        <field name="roleName" type="text" title="Role Name" required="true" length="50"/>
+        <field name="roleDesc" type="text" title="Role Description" length="100" />
+        <field name="createdBy" type="text" title="Created By" />
+        <field name="createdTime" type="dateTime" title="Created Time" />
+        <field name="updatedBy" type="text" title="Updated By" />
+        <field name="updatedTime" type="dateTime" title="Updated Time" />
+        <field name="functions" type="long" title="Functions"  />
+    </fields>
+    
+    <serverObject lookupStyle="spring" bean="systemRoleDmi" />
+</DataSource>

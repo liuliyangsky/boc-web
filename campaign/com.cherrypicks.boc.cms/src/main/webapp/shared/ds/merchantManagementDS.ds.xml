@@ -1,0 +1,12 @@
+<DataSource ID="merchantManagementDS" serverType="generic">
+    <fields>
+        <field name="id" type="long" title="merchant ID" hidden="true" primaryKey="true" />
+        <field name="merchantPhone" type="text" title="merchant Phone" />
+        <field name="merchantWebpage" type="text" title="Merchant WebPage" />
+        <field name="createdBy" type="text" title="Created By" />
+        <field name="createdTime" type="dateTime" title="Created Time" />
+        <field name="updatedBy" type="text" title="Updated By" />
+        <field name="updatedTime" type="dateTime" title="Updated Time" />
+    </fields>
+    <serverObject lookupStyle="spring" bean="merchantManagementDmi" />
+</DataSource>

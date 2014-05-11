@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.1.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
+	
+	<bean id="authorizeService" class="com.cherrypicks.boc.service.impl.AuthorizeServiceImpl" />
+	
+	<bean id="languageService" class="com.cherrypicks.boc.service.impl.LanguageServiceImpl"/>
+	
+	<bean id="campaignService" class="com.cherrypicks.boc.service.impl.CampaignServiceImpl" />
+	
+	<bean id="campaignLangMapService" class="com.cherrypicks.boc.service.impl.CampaignLangMapServiceImpl" />
+
+	<bean id="campaignCouponService" class="com.cherrypicks.boc.service.impl.CampaignCouponServiceImpl" />
+
+	<bean id="activityService" class="com.cherrypicks.boc.service.impl.ActivityServiceImpl" />
+	
+	<bean id="activityAddressService" class="com.cherrypicks.boc.service.impl.ActivityAddressServiceImpl" />
+	
+	<bean id="merchantService" class="com.cherrypicks.boc.service.impl.MerchantServiceImpl" />
+
+	<bean id="merchantLangMapService" class="com.cherrypicks.boc.service.impl.MerchantLangMapServiceImpl" />
+		                           
+</beans>        

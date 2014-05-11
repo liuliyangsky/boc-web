@@ -1,0 +1,12 @@
+<DataSource ID="campaignCouponDS" serverType="generic">
+    <fields>
+    	<field name="id" type="text" title="id" hidden="true" primaryKey="true" />
+        <field name="address" type="text" title="address" />
+        <field name="numberOfPeople" type="text" title="Number People" />
+        <field name="createdBy" type="text" title="Created By" />
+        <field name="createdTime" type="dateTime" title="Created Time" />
+        <field name="updatedBy" type="text" title="Updated By" />
+        <field name="updatedTime" type="dateTime" title="Updated Time" />
+    </fields>
+    <serverObject lookupStyle="spring" bean="campaignCouponDmi" />
+</DataSource>

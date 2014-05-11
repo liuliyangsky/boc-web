@@ -1,0 +1,11 @@
+<DataSource ID="languageDS" serverType="generic">
+    <fields>
+        <field name="id" type="long"   title="Language ID" hidden="true" primaryKey="true" />
+        <field name="img" type="text" title="Flag" />
+        <field name="name" type="text" title="Language" />
+        <field name="code" type="text" title="Code" />
+        <field name="defaultLang" type="boolean" title="Default Language" />
+        <field name="displayLang" type="boolean" title="Display Language" />
+    </fields>
+    <serverObject lookupStyle="spring" bean="languageDmi" />
+</DataSource>

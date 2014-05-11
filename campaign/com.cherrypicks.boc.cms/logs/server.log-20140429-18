@@ -1,0 +1,816 @@
+[INFO ][2014-04-29 18:01:33,606][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:01:33,832][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:01:34,048][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:01:34,265][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:01:34,477][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:01:34,905][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:01:35,191][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:01:40,021][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:01:42,611][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:01:42,702][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:01:43,126][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:01:43,126][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:01:43,774][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:01:44,434][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:04:41,355][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:04:41,572][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:04:51,024][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result:3 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_USER
+[INFO ][2014-04-29 18:04:51,194][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:04:51,429][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:04:51,464][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result:3 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_USER
+[INFO ][2014-04-29 18:04:51,576][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:04:51,703][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:04:51,703][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:04:51,806][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:04:51,814][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:04:51,814][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:04:51,986][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:04:52,224][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:5 sql:select * from BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP where USER_ID in (:userIds)
+[INFO ][2014-04-29 18:04:52,346][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:04:52,351][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:5 sql:select * from BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP where USER_ID in (:userIds)
+[INFO ][2014-04-29 18:04:54,064][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:04:54,621][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:04:54,895][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:04:54,895][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:04:55,111][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:04:55,598][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:04:55,802][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:04:56,412][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:05:23,059][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:05:24,491][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:05:24,821][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:05:25,143][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:05:45,147][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result:3 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_USER
+[INFO ][2014-04-29 18:05:45,537][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:05:45,537][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:05:45,982][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:5 sql:select * from BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP where USER_ID in (:userIds)
+[INFO ][2014-04-29 18:05:51,393][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:05:51,760][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:05:52,082][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:05:52,998][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:06:09,391][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result:3 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_USER
+[INFO ][2014-04-29 18:06:09,698][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:06:09,698][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:06:10,051][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:5 sql:select * from BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP where USER_ID in (:userIds)
+[INFO ][2014-04-29 18:07:08,812][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:07:10,634][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:07:10,959][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:07:11,752][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:07:54,226][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:07:54,453][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:07:54,498][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:07:54,797][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:07:55,125][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:07:55,232][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:07:56,657][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:07:56,962][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:07:58,074][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:07:58,147][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:07:58,929][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:07:58,929][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:07:59,459][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:08:01,151][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:08:17,735][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:08:17,850][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:08:18,649][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:08:18,686][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:08:18,957][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:08:19,000][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:08:19,262][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:08:19,456][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:08:20,678][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:08:20,882][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:08:21,734][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:08:21,734][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:08:23,459][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:08:24,585][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:08:28,521][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:08:28,594][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:08:30,917][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-29 18:08:31,574][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:1 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-29 18:09:16,238][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[WARN ][2014-04-29 18:09:33,766][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-04-29 18:09:33,812][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[INFO ][2014-04-29 18:09:43,568][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:09:44,253][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:09:45,058][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:09:45,356][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:33,967][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:11:34,194][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:34,206][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:11:34,420][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:34,429][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:34,651][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:34,657][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:34,892][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:35,903][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:35,994][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:11:36,221][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:11:36,222][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:11:36,562][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:11:36,926][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:11:54,416][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:11:54,614][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:11:54,685][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:54,883][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:54,975][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:55,151][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:55,271][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:55,453][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:58,209][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:11:58,285][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:11:58,651][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:11:58,651][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:11:59,139][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:11:59,691][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:12:54,081][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:12:54,218][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:12:54,789][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:12:55,465][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:12:55,784][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:12:56,133][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:12:56,513][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:12:57,917][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:13:00,135][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:13:00,444][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:13:00,445][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:13:00,853][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:13:02,416][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:13:03,783][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:18:35,616][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:18:35,742][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:24:09,255][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:24:10,324][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:24:10,700][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:24:19,465][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[WARN ][2014-04-29 18:24:32,226][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-04-29 18:24:36,347][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-04-29 18:24:53,856][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-04-29 18:24:55,448][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-04-29 18:25:29,834][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[INFO ][2014-04-29 18:26:30,046][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:26:30,228][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:26:30,333][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:26:30,488][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:26:30,565][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:26:30,759][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:26:30,827][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:26:31,025][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:26:34,041][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:26:34,174][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:26:36,254][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-29 18:26:36,401][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-29 18:26:53,304][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:26:54,574][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:26:54,844][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:26:55,073][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:26:55,298][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:26:57,994][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:26:58,075][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:26:58,388][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:26:58,388][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:26:58,836][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:26:59,276][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:27:45,210][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:27:45,458][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:27:45,458][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:27:46,266][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:27:46,589][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:28:26,530][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-29 18:31:38,416][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - updatedCount:1 sql:UPDATE BOC_CAMPAIGN.MERCHANT SET IS_DELETED=0, MERCHANT_WEBPAGE='1111111111111', UPDATED_TIME='2014-04-29 18:31:38' WHERE ID=5 
+[INFO ][2014-04-29 18:31:46,027][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-29 18:33:33,356][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:1 sql:select r.* from BOC_CAMPAIGN.SYSTEM_ROLE r, BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP map, BOC_CAMPAIGN.SYSTEM_USER u where map.ROLE_ID = r.ID and map.USER_ID = u.ID and u.USER_NAME = 'admin'
+[INFO ][2014-04-29 18:33:34,878][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID in (:roleIds) 
+[INFO ][2014-04-29 18:33:44,126][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:33:44,504][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:33:44,507][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:33:44,507][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:33:44,678][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:33:44,678][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:33:44,883][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:33:45,617][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:33:45,865][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:33:46,022][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:33:55,110][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-29 18:33:55,378][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-04-29 18:33:58,112][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result:3 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_USER
+[INFO ][2014-04-29 18:33:58,204][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:33:58,222][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:33:58,257][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result:3 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_USER
+[INFO ][2014-04-29 18:33:58,622][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:33:58,622][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:33:58,770][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:33:58,945][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:33:58,945][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:33:59,212][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:33:59,389][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:5 sql:select * from BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP where USER_ID in (:userIds)
+[INFO ][2014-04-29 18:33:59,616][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:5 sql:select * from BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP where USER_ID in (:userIds)
+[INFO ][2014-04-29 18:34:00,140][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:34:00,931][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:34:02,652][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:34:02,694][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:34:03,081][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:34:03,082][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:34:03,606][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:34:04,011][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:34:04,102][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:34:04,469][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:34:37,760][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - updatedCount:1 sql:UPDATE BOC_CAMPAIGN.SYSTEM_USER SET CREATED_BY='admin', CREATED_TIME='2014-04-28 10:48:32', EMAIL='110@hiotmail.com', IS_DELETED=0, MOBILE='13156895454', PASSWORD='21232F297A57A5A743894A0E4A801FC3', STATUS=1, UPDATED_BY='admin', UPDATED_TIME='2014-04-29 18:34:37', USER_NAME='administator' WHERE ID=203 
+[INFO ][2014-04-29 18:34:37,935][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - updatedCount:2 sql:delete from BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP where USER_ID = 203
+[INFO ][2014-04-29 18:34:44,780][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:2 sql:select r.* from BOC_CAMPAIGN.SYSTEM_ROLE r, BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP map, BOC_CAMPAIGN.SYSTEM_USER u where map.ROLE_ID = r.ID and map.USER_ID = u.ID and u.USER_NAME = 'administator'
+[INFO ][2014-04-29 18:35:00,641][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result:3 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_USER
+[INFO ][2014-04-29 18:35:00,999][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:35:00,999][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:35:01,524][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:5 sql:select * from BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP where USER_ID in (:userIds)
+[INFO ][2014-04-29 18:36:58,357][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:36:58,615][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:36:58,617][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:36:58,924][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:36:58,925][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:36:59,336][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:36:59,345][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:36:59,609][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:37:00,740][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:37:00,845][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:37:01,206][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:37:01,207][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:37:02,046][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:37:02,605][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:37:37,281][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:37:37,440][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:37:37,556][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:37:37,739][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:37:37,847][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:37:38,016][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:37:38,135][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:37:38,319][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:37:39,559][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:37:39,564][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:37:39,843][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:37:39,844][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:37:40,250][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:37:41,061][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:38:03,767][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:38:03,990][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:38:03,999][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:38:04,200][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:38:04,217][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:38:04,423][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:38:04,434][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:38:04,666][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:38:05,529][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:38:05,609][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:38:05,908][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:38:05,908][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:38:06,225][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:38:06,525][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:39:48,732][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:39:48,922][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:39:48,981][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:39:49,189][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:39:49,232][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:39:49,445][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:39:49,540][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:39:49,716][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:39:51,243][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:39:51,324][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:39:51,588][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:39:51,588][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:39:51,994][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:39:52,395][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:40:22,612][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:40:22,838][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:40:22,878][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:23,110][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:23,176][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:23,417][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:23,449][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:23,732][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:24,635][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:24,750][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:40:25,085][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:40:25,085][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:40:25,550][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:40:26,045][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:40:52,980][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:40:53,205][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:40:53,252][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:53,507][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:53,542][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:53,788][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:53,825][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:54,063][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:54,915][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:40:54,982][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:40:55,241][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:40:55,241][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:40:55,631][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:40:56,114][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:41:29,361][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:41:29,762][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:41:30,607][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:41:31,017][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:41:31,609][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:41:31,811][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:41:32,224][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:41:32,719][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:41:34,749][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:41:34,774][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:41:35,208][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:41:35,208][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:41:35,774][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:41:36,212][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:42:15,342][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:42:15,611][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:42:15,612][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:15,868][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:15,869][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:16,195][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:16,196][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:16,544][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:17,234][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:17,337][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:42:17,638][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:42:17,638][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:42:18,069][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:42:18,453][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:42:42,294][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:42:42,523][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:42:42,612][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:42,796][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:42,968][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:43,171][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:43,809][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:44,683][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:45,727][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:42:45,846][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:42:46,112][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:42:46,113][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:42:46,500][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:42:46,941][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:43:49,638][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:43:49,897][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:43:49,909][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:43:50,584][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:43:50,729][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:43:50,868][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:43:50,995][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:43:51,253][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:43:52,403][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:43:52,488][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:43:52,757][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:43:52,757][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:43:53,158][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:43:53,558][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:45:16,488][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:45:16,720][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:45:16,736][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:16,973][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:17,022][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:17,241][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:17,302][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:17,507][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:19,364][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:19,368][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:19,458][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:19,735][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:34,784][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:37,883][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:38,989][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:41,321][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:42,037][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:45,991][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:47,503][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:53,938][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:45:54,985][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:47:40,483][org.springframework.security.core.SpringSecurityCoreVersion] - You are running with Spring Security Core 3.1.1.RELEASE
+[INFO ][2014-04-29 18:47:40,484][org.springframework.security.config.SecurityNamespaceHandler] - Spring Security 'config' module version is 3.1.1.RELEASE
+[INFO ][2014-04-29 18:47:40,550][org.springframework.security.config.http.HttpSecurityBeanDefinitionParser] - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.access.channel.ChannelProcessingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 100, Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+[INFO ][2014-04-29 18:47:40,848][com.mchange.v2.log.MLog] - MLog clients using log4j logging.
+[INFO ][2014-04-29 18:47:40,930][com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO ][2014-04-29 18:47:41,445][com.cherrypicks.boc.dao.impl.SystemFunctionDaoImpl] - init
+[INFO ][2014-04-29 18:47:41,480][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - init
+[INFO ][2014-04-29 18:47:41,504][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - init
+[INFO ][2014-04-29 18:47:41,527][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - init
+[INFO ][2014-04-29 18:47:41,543][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - init
+[INFO ][2014-04-29 18:47:41,568][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - init
+[INFO ][2014-04-29 18:47:41,585][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - init
+[INFO ][2014-04-29 18:47:41,618][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - init
+[INFO ][2014-04-29 18:47:41,635][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - init
+[INFO ][2014-04-29 18:47:41,814][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: Ant [pattern='/login.jsp*'], []
+[INFO ][2014-04-29 18:47:41,884][org.springframework.security.web.access.channel.ChannelProcessingFilter] - Validated configuration attributes
+[INFO ][2014-04-29 18:47:42,099][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.access.channel.ChannelProcessingFilter@54d81cda, org.springframework.security.web.context.SecurityContextPersistenceFilter@384e57ba, org.springframework.security.web.authentication.logout.LogoutFilter@1f619137, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e84c1f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ddae27f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d4c4066, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6917ffc5, org.springframework.security.web.session.SessionManagementFilter@2699146a, org.springframework.security.web.access.ExceptionTranslationFilter@c0b4ef2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a6bf80b]
+[INFO ][2014-04-29 18:47:42,121][org.springframework.security.config.http.DefaultFilterChainValidator] - Checking whether login URL '/login.jsp' is accessible with your configuration
+[INFO ][2014-04-29 18:47:52,760][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bwm7h6911c10py25tnloh|4fd74bb1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.ibm.db2.jcc.DB2Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bwm7h6911c10py25tnloh|4fd74bb1, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:db2://office2.cherrypicks.com:38500/SM_MBA, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 6000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 20, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO ][2014-04-29 18:47:54,825][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:1 sql:select r.* from BOC_CAMPAIGN.SYSTEM_ROLE r, BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP map, BOC_CAMPAIGN.SYSTEM_USER u where map.ROLE_ID = r.ID and map.USER_ID = u.ID and u.USER_NAME = 'admin'
+[INFO ][2014-04-29 18:47:55,585][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID in (:roleIds) 
+[INFO ][2014-04-29 18:47:57,998][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:47:58,187][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:47:58,296][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:47:58,478][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:47:58,593][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:47:58,911][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:47:59,319][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:47:59,615][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:48:00,751][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:48:00,800][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:48:00,891][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:48:01,175][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:48:04,435][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:48:05,853][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:49:41,856][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:49:42,097][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:49:42,518][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:49:42,998][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:49:43,952][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:49:44,355][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:49:45,004][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:49:45,371][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:49:47,202][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:49:47,242][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:49:48,173][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:49:50,086][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:49:50,386][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:49:53,027][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:50:08,813][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:50:09,076][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:50:09,356][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:50:11,329][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:50:11,641][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:50:14,406][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:50:15,945][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[WARN ][2014-04-29 18:53:14,811][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[WARN ][2014-04-29 18:54:04,996][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：Reply.fill() - socketInputStream.read (-1)。消息：Read timed out。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.x.b(x.java:252)
+	at com.ibm.db2.jcc.t4.x.c(x.java:360)
+	at com.ibm.db2.jcc.t4.x.c(x.java:473)
+	at com.ibm.db2.jcc.t4.x.v(x.java:1241)
+	at com.ibm.db2.jcc.t4.ab.f(ab.java:97)
+	at com.ibm.db2.jcc.t4.p.e(p.java:81)
+	at com.ibm.db2.jcc.t4.qb.k(qb.java:160)
+	at com.ibm.db2.jcc.am.io.jb(io.java:2322)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4401)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at com.ibm.db2.jcc.t4.x.b(x.java:208)
+	... 19 more
+[INFO ][2014-04-29 18:55:03,624][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:55:04,473][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:04,671][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:04,862][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:05,006][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:06,587][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:55:07,119][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:08,626][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:08,827][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:09,075][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:10,837][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:10,837][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:11,101][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:11,416][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:25,661][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:26,155][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:50,766][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:55:51,460][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:55:51,548][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:51,629][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:51,732][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:52,026][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:52,133][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:52,207][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:52,273][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:52,437][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:53,643][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:53,652][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:53,774][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:53,987][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:58,067][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:55:59,516][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:56:02,795][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:56:19,391][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result:3 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_USER
+[INFO ][2014-04-29 18:56:19,545][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:56:19,690][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:56:20,348][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result:3 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_USER
+[INFO ][2014-04-29 18:56:21,324][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:56:21,794][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:56:21,794][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:56:22,246][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:56:22,246][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_USER ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:56:22,247][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:56:23,093][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:56:23,283][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:56:23,688][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:5 sql:select * from BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP where USER_ID in (:userIds)
+[INFO ][2014-04-29 18:56:24,470][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:5 sql:select * from BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP where USER_ID in (:userIds)
+[INFO ][2014-04-29 18:56:26,677][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result:2 sql:SELECT COUNT(*) FROM BOC_CAMPAIGN.SYSTEM_ROLE
+[INFO ][2014-04-29 18:56:26,704][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:56:26,881][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:56:26,882][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.SYSTEM_ROLE ORDER BY CREATED_TIME DESC 
+[INFO ][2014-04-29 18:56:27,403][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:56:28,306][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:56:28,606][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:1 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 43
+[INFO ][2014-04-29 18:56:29,106][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID = 1
+[INFO ][2014-04-29 18:56:44,301][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:56:44,410][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:56:44,532][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:56:44,645][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:56:44,745][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:56:45,939][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:56:50,075][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:56:50,996][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:56:58,396][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:57:53,789][org.springframework.security.core.SpringSecurityCoreVersion] - You are running with Spring Security Core 3.1.1.RELEASE
+[INFO ][2014-04-29 18:57:53,789][org.springframework.security.config.SecurityNamespaceHandler] - Spring Security 'config' module version is 3.1.1.RELEASE
+[INFO ][2014-04-29 18:57:53,860][org.springframework.security.config.http.HttpSecurityBeanDefinitionParser] - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.access.channel.ChannelProcessingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 100, Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+[INFO ][2014-04-29 18:57:54,179][com.mchange.v2.log.MLog] - MLog clients using log4j logging.
+[INFO ][2014-04-29 18:57:54,257][com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO ][2014-04-29 18:57:54,780][com.cherrypicks.boc.dao.impl.SystemFunctionDaoImpl] - init
+[INFO ][2014-04-29 18:57:54,818][com.cherrypicks.boc.dao.impl.SystemRoleDaoImpl] - init
+[INFO ][2014-04-29 18:57:54,834][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - init
+[INFO ][2014-04-29 18:57:54,853][com.cherrypicks.boc.dao.impl.SystemUserDaoImpl] - init
+[INFO ][2014-04-29 18:57:54,877][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - init
+[INFO ][2014-04-29 18:57:54,902][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - init
+[INFO ][2014-04-29 18:57:54,917][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - init
+[INFO ][2014-04-29 18:57:54,937][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - init
+[INFO ][2014-04-29 18:57:54,958][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - init
+[INFO ][2014-04-29 18:57:55,154][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: Ant [pattern='/login.jsp*'], []
+[INFO ][2014-04-29 18:57:55,266][org.springframework.security.web.access.channel.ChannelProcessingFilter] - Validated configuration attributes
+[INFO ][2014-04-29 18:57:55,465][org.springframework.security.web.DefaultSecurityFilterChain] - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.access.channel.ChannelProcessingFilter@7e58924a, org.springframework.security.web.context.SecurityContextPersistenceFilter@68ec7913, org.springframework.security.web.authentication.logout.LogoutFilter@7d010435, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4dbb73b0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4da84fae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65075056, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@432b71eb, org.springframework.security.web.session.SessionManagementFilter@59441dc0, org.springframework.security.web.access.ExceptionTranslationFilter@6fd5609, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@621b6c74]
+[INFO ][2014-04-29 18:57:55,482][org.springframework.security.config.http.DefaultFilterChainValidator] - Checking whether login URL '/login.jsp' is accessible with your configuration
+[INFO ][2014-04-29 18:58:32,834][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bwm7h6911c1dv70xqcwwa|744607b5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.ibm.db2.jcc.DB2Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bwm7h6911c1dv70xqcwwa|744607b5, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:db2://office2.cherrypicks.com:38500/SM_MBA, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 6000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 20, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO ][2014-04-29 18:58:36,799][com.cherrypicks.boc.dao.impl.SystemUserRoleMapDaoImpl] - result size:1 sql:select r.* from BOC_CAMPAIGN.SYSTEM_ROLE r, BOC_CAMPAIGN.SYSTEM_USER_ROLE_MAP map, BOC_CAMPAIGN.SYSTEM_USER u where map.ROLE_ID = r.ID and map.USER_ID = u.ID and u.USER_NAME = 'admin'
+[INFO ][2014-04-29 18:58:37,718][com.cherrypicks.boc.dao.impl.SystemRoleFunctionMapDaoImpl] - result size:6 sql:select sf.* from BOC_CAMPAIGN.SYSTEM_FUNCTION sf, BOC_CAMPAIGN.SYSTEM_ROLE_FUNCTION_MAP rfm where sf.ID = rfm.FUNC_ID and rfm.ROLE_ID in (:roleIds) 
+[INFO ][2014-04-29 18:58:41,958][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:58:41,979][com.cherrypicks.boc.dao.impl.ActivityDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY
+[INFO ][2014-04-29 18:58:42,230][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:58:42,510][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:58:42,552][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:58:43,212][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:58:44,349][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:58:47,365][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:58:48,057][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:58:48,970][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:58:54,536][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:58:54,536][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:58:55,359][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:58:59,957][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:59:01,046][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:59:04,047][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:59:04,587][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS
+[INFO ][2014-04-29 18:59:06,025][com.cherrypicks.boc.dao.impl.ActivityAddressDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.ACTIVITY_ADDRESS

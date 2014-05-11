@@ -1,0 +1,76 @@
+<DataSource ID="uploadFileDS" serverType="generic">
+    <fields>
+        <field name="id" type="sequence"   hidden="true" primaryKey="true" />
+        <field name="fileName" type="text" title="File Name" />
+        <field name="fileType" type="text" />
+		<field name="file" type="upload" title="File">
+			<validators>
+				<validator type="custom" clientOnly="true">
+					<condition>
+						<![CDATA[
+							var fileType = record.fileType;
+							if ("image" == fileType) {
+								if (!value.endsWith(".jpg") 
+									&& !value.endsWith(".JPG") 
+									&& !value.endsWith(".png") 
+									&& !value.endsWith(".PNG")) {
+										validator.errorMessage = "Expect file extension is .jpg|.JPG|.png|.PNG.";
+										return false;
+									}
+							}
+							else if ("document" == fileType) {
+								if (!value.endsWith(".pdf")
+									&& !value.endsWith(".PDF") 
+									&& !value.endsWith(".html") 
+									&& !value.endsWith(".HTML")) {
+										validator.errorMessage = "Expect file extension is .pdf|.PDF|.html|.HTML.";
+										return false;
+									}
+							}
+							else if ("video" == fileType) {
+								if (!value.endsWith(".mov")
+									&& !value.endsWith(".MOV")
+									&& !value.endsWith(".mp4")
+									&& !value.endsWith(".MP4")) {
+										validator.errorMessage = "Expect file extension is .mov|.MOV|.mp4|.MP4.";
+										return false;
+									}
+							} else if ("json" == fileType) {
+								if (!value.endsWith(".json") && !value.endsWith(".JSON")
+								    && !value.endsWith(".txt") && !value.endsWith(".TXT")) {
+									validator.errorMessage = "Expect file extension is .json|.JSON|.txt|.TXT.";
+									return false;
+								} 
+							} else if ("award" == fileType) {
+								if (!value.endsWith(".jpg") 
+									&& !value.endsWith(".JPG") 
+									&& !value.endsWith(".png") 
+									&& !value.endsWith(".PNG")) {
+										validator.errorMessage = "Expect file extension is .jpg|.JPG|.png|.PNG.";
+										return false;
+									}
+							} else if ("composite" == fileType) {
+								if (!value.endsWith(".jpg") 
+									&& !value.endsWith(".JPG") 
+									&& !value.endsWith(".png") 
+									&& !value.endsWith(".PNG")
+									&& !value.endsWith(".pdf")
+									&& !value.endsWith(".PDF") 
+									&& !value.endsWith(".html") 
+									&& !value.endsWith(".HTML")) {
+										validator.errorMessage = "Expect file extension is .jpg|.JPG|.png|.PNG|.pdf|.PDF|.html|.HTML.";
+										return false;
+									}
+															
+							}
+							return true;
+						]]>
+					</condition>
+				</validator>
+			</validators>
+		</field>
+	</fields>
+    
+   <!--  <serverObject lookupStyle="spring" bean="uploadFileDmi" /> -->
+    
+</DataSource>

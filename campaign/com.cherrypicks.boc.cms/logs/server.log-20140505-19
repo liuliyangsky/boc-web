@@ -1,0 +1,634 @@
+[INFO ][2014-05-05 19:00:59,149][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:01:00,035][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 19:01:02,109][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:02:10,313][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:02:10,379][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 19:07:51,645][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:07:51,828][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:07:53,951][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:07:54,024][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 19:07:54,050][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:07:54,194][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 19:08:38,788][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:08:38,927][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:08:42,723][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:08:43,071][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:08:44,851][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:08:44,914][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 19:08:44,931][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:08:45,054][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[WARN ][2014-05-05 19:10:39,046][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,048][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,054][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,056][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,058][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,059][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,061][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,062][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,046][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,046][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,066][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,065][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,068][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,067][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,070][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,069][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,071][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,070][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,073][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[WARN ][2014-05-05 19:10:39,072][com.mchange.v2.c3p0.impl.DefaultConnectionTester] - SQL State '08001' of Exception which occurred during a Connection test (fallback DatabaseMetaData test) implies that the database is invalid, and the pool should refill itself with fresh Connections.
+com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2030][11211][3.64.96] 在对连接的底层 socket、socket input stream 或 socket output stream 执行操作期间
+发生通信错误。错误位置：T4Agent.sendRequest() - flush (-1)。消息：Connection reset by peer: socket write error。 ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.bd.a(bd.java:321)
+	at com.ibm.db2.jcc.t4.a.a(a.java:548)
+	at com.ibm.db2.jcc.t4.a.a(a.java:543)
+	at com.ibm.db2.jcc.t4.a.f(a.java:484)
+	at com.ibm.db2.jcc.t4.a.flush_(a.java:390)
+	at com.ibm.db2.jcc.am.Agent.flow(Agent.java:230)
+	at com.ibm.db2.jcc.am.jo.b(jo.java:4280)
+	at com.ibm.db2.jcc.am.CallableStatement.ec(CallableStatement.java:148)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.executeCatalogQuery(DatabaseMetaData.java:7813)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTablesX(DatabaseMetaData.java:6325)
+	at com.ibm.db2.jcc.am.DatabaseMetaData.getTables(DatabaseMetaData.java:6231)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnectionNoQuery(DefaultConnectionTester.java:185)
+	at com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:62)
+	at com.mchange.v2.c3p0.AbstractConnectionTester.activeCheckConnection(AbstractConnectionTester.java:67)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:368)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:310)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:1999)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at com.ibm.db2.jcc.t4.db.b(db.java:1685)
+	at com.ibm.db2.jcc.t4.db.a(db.java:1633)
+	at com.ibm.db2.jcc.t4.a.f(a.java:451)
+	... 14 more
+[INFO ][2014-05-05 19:13:15,957][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:13:16,661][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 19:13:17,522][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:13:19,387][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 19:13:19,863][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 19:13:22,211][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-05-05 19:13:22,826][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-05-05 19:13:23,356][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-05-05 19:13:23,450][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-05-05 19:13:26,631][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-05-05 19:13:39,219][com.cherrypicks.boc.dao.impl.MerchantDaoImpl] - result size:4 sql:SELECT * FROM BOC_CAMPAIGN.MERCHANT
+[INFO ][2014-05-05 19:13:40,052][com.cherrypicks.boc.dao.impl.CampaignCouponDaoImpl] - result size:0 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN_COUPON
+[INFO ][2014-05-05 19:13:42,209][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:17:46,243][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:17:50,354][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 19:17:51,387][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:17:51,541][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:17:53,972][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:17:54,839][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 19:17:54,856][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:17:55,148][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 19:18:31,187][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:18:31,369][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:18:32,190][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:18:32,543][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 19:18:32,562][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:18:33,452][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 19:18:35,135][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:18:35,517][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 19:19:04,409][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:19:04,639][com.cherrypicks.boc.dao.impl.CampaignDaoImpl] - result size:3 sql:SELECT * FROM BOC_CAMPAIGN.CAMPAIGN
+[INFO ][2014-05-05 19:19:06,163][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:19:06,461][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE
+[INFO ][2014-05-05 19:19:06,492][com.cherrypicks.boc.cms.dmi.LanguageDMI] - procesing DMI fetch operation
+[INFO ][2014-05-05 19:19:07,335][com.cherrypicks.boc.dao.impl.LanguageDaoImpl] - result size:2 sql:SELECT * FROM BOC_CAMPAIGN.LANGUAGE

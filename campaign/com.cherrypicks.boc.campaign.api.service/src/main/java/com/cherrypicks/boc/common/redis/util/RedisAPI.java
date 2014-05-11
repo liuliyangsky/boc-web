@@ -1,0 +1,602 @@
+package com.cherrypicks.boc.common.redis.util;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
+import redis.clients.jedis.JedisPoolConfig;
+import redis.clients.jedis.Pipeline;
+
+import com.cherrypicks.boc.common.exception.InvalidArgumentException;
+import com.cherrypicks.boc.common.util.PropertiesUtil;
+
+/**
+ * Redis操作接口
+ * 
+ * @author carlye
+ */
+public class RedisAPI {
+
+	private static Log logger = LogFactory.getLog(RedisAPI.class);
+
+	private static JedisPool pool = null;
+
+	static {
+		JedisPoolConfig config = new JedisPoolConfig();
+		// 控制一个pool可分配多少个jedis实例，通过pool.getResource()来获取；
+		// 如果赋值为-1，则表示不限制；如果pool已经分配了maxActive个jedis实例，则此时pool的状态为exhausted(耗尽)。
+		config.setMaxActive(-1);
+		// 控制一个pool最多有多少个状态为idle(空闲的)的jedis实例。
+		config.setMaxIdle(200);
+		// 表示当borrow(引入)一个jedis实例时，最大的等待时间，如果超过等待时间，则直接抛出JedisConnectionException；
+		config.setMaxWait(1000 * 100);
+		// 在borrow一个jedis实例时，是否提前进行validate操作；如果为true，则得到的jedis实例均是可用的；
+		config.setTestOnBorrow(true);
+		
+		pool = new JedisPool(config, PropertiesUtil.getProperty("redis0.host"), Integer.valueOf(PropertiesUtil.getProperty("redis0.port")));
+	}
+
+	public static final int DB_DEFAULT = 5;
+	public static final int DB_SHARE = 6;
+
+	public enum Db {
+		DEFAULT(DB_DEFAULT), // 默认数据库
+		SHARE(DB_SHARE), // Share数据库
+		;
+		private int db;
+
+		private Db(int db) {
+			this.db = db;
+		}
+
+		public int toIntValue() {
+			return this.db;
+		}
+
+		public static Db toDb(int db) {
+			if (DB_DEFAULT == db) {
+				return Db.DEFAULT;
+			} else if (DB_SHARE == db) {
+				return Db.SHARE;
+			} else {
+				throw new InvalidArgumentException("未知类型[" + db + "].");
+			}
+		}
+	}
+
+	public static void init() {
+		logger.info("init");
+	}
+
+	public static void destroy() {
+		logger.info("destroy");
+
+		pool.destroy();
+	}
+
+	/**
+	 * 构建redis连接池
+	 * 
+	 * @return JedisPool
+	 */
+	public static JedisPool getPool(String key) {
+		// int idx = key.hashCode() % 4;
+		return pool;
+	}
+
+	/**
+	 * 返还到连接池
+	 * 
+	 * @param pool
+	 * @param redis
+	 */
+	public static void returnResource(JedisPool pool, Jedis redis) {
+		if (redis != null) {
+			redis.select(DB_DEFAULT);
+			pool.returnResource(redis);
+		}
+	}
+
+	public static boolean set(String key, String value) {
+
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+
+			jedis.set(key, value);
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return true;
+	}
+
+	/**
+	 * 获取数据
+	 * 
+	 * @param key
+	 * @return
+	 */
+	public static String get(String key) {
+		String value = null;
+
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+			value = jedis.get(key);
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return value;
+	}
+
+	public static boolean hset(String key, String field, String value) {
+		return hset(Db.DEFAULT, key, field, value);
+	}
+
+	public static boolean hset(RedisAPI.Db db, String key, String field, String value) {
+
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+			jedis.select(db.toIntValue());
+
+			jedis.hset(key, field, value);
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return true;
+	}
+
+	public static String hget(String key, String field) {
+		return hget(Db.DEFAULT, key, field);
+	}
+
+	public static String hget(RedisAPI.Db db, String key, String field) {
+
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		String value = null;
+
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+			jedis.select(db.toIntValue());
+
+			value = jedis.hget(key, field);
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return value;
+	}
+
+	public static boolean hdel(String key, String field) {
+		return hdel(Db.DEFAULT, key, field);
+	}
+	public static boolean hdel(RedisAPI.Db db,String key, String field) {
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		long value = 0;
+
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+			jedis.select(db.toIntValue());
+			
+			value = jedis.hdel(key, field);
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return (value > 0);
+	}
+
+	public static boolean hsetByFieldIndex(String key, String field, String value) {
+
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		try {
+
+			pool = getPool(field);
+			jedis = pool.getResource();
+
+			jedis.hset(key, field, value);
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return true;
+	}
+
+	public static String hgetByFieldIndex(String key, String field) {
+
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		String value = null;
+
+		try {
+
+			pool = getPool(field);
+			jedis = pool.getResource();
+
+			value = jedis.hget(key, field);
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return value;
+	}
+
+	/**
+	 * 有序集合添加 function
+	 * @param db
+	 * @param key
+	 * @param score
+	 * @param value
+	 * @return
+	 */
+	public static boolean zadd(RedisAPI.Db db, String key, double score, String value) {
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+			jedis.select(db.toIntValue());
+
+			return jedis.zadd(key, score, value) > 0;
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return false;
+	}
+	
+	/**
+	 * 有序集合刪除 function
+	 * @param db
+	 * @param key
+	 * @param score
+	 * @param value
+	 * @return
+	 */
+	public static boolean zrem(RedisAPI.Db db,String key, String... field) {
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		long value = 0;
+
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+			jedis.select(db.toIntValue());
+
+			value = jedis.zrem(key, field);
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return (value > 0);
+	}
+
+	public static Set<String> zrevrange(String key, int start, int end) {
+		return zrevrange(Db.DEFAULT, key, start, end);
+	}
+
+	public static Set<String> zrevrange(RedisAPI.Db db, String key, int start, int end) {
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+
+			jedis.select(db.toIntValue());
+
+			return jedis.zrevrange(key, start, end);
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return null;
+	}
+
+	public static boolean batchHset(String key, Map<String, String> hashDataMap) {
+		return batchHset(Db.DEFAULT, key, hashDataMap);
+	}
+
+	/**
+	 * 批量insert hash
+	 * 
+	 * @param key
+	 * @param hashDataMap
+	 *            k->field , v->value
+	 */
+	public static boolean batchHset(RedisAPI.Db db, String key, Map<String, String> hashDataMap) {
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+
+			jedis.select(db.toIntValue());
+
+			Pipeline pipeline = jedis.pipelined();
+
+			for (Map.Entry<String, String> data : hashDataMap.entrySet()) {
+				pipeline.hset(key, data.getKey(), data.getValue());
+			}
+
+			pipeline.sync();
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return true;
+	}
+	
+	/**
+	 * 批量insert Sorted Sets
+	 * 
+	 * @param key
+	 * @param hashDataMap
+	 *            k->field , v->value
+	 */
+	public static boolean batchZadd(RedisAPI.Db db, String key, Map<Double, String> hashDataMap) {
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+
+			jedis.select(db.toIntValue());
+
+			Pipeline pipeline = jedis.pipelined();
+
+			pipeline.zadd(key,hashDataMap);
+
+			pipeline.sync();
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return true;
+	}
+	
+	
+	public static List<String> hvals(String key) {
+		return hvals(Db.DEFAULT, key);
+	}
+
+	public static List<String> hvals(RedisAPI.Db db, String key) {
+		JedisPool pool = null;
+		Jedis jedis = null;
+		List<String> result = null;
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+			jedis.select(db.toIntValue());
+
+			result = jedis.hvals(key);
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return result;
+	}
+	
+	public class Page {
+		private int start;
+		private int size;
+
+		public Page(int start, int size) {
+			start--;
+
+			if (start < 0) {
+				start = 0;
+			}
+
+			size = start + size - 1;
+
+			if (size == 0) { // redis 0,0 是取第一个
+				start = 0;
+				size = 0;
+			}
+
+			if (size <0) { // redis 0,0 是取第一个
+				start = Integer.MAX_VALUE;
+				size = Integer.MAX_VALUE;
+			}
+			
+
+			this.start = start;
+			this.size = size;
+		}
+
+		public int getStart() {
+			return start;
+		}
+
+		public int getSize() {
+			return size;
+		}
+	}
+
+	public Page getPage(int mysqlStart, int mysqlSize) {
+		return new Page(mysqlStart, mysqlSize);
+	}
+
+	public static void main(String[] args) {
+		Page p = new RedisAPI().getPage(0, 1);
+		System.out.println(p.getStart() + "," + p.getSize());
+	}
+
+	public static List<String> hgetAll(String identity) {
+		return  hgetAll(Db.DEFAULT, identity);
+	}
+	/**
+	 * 刪除Redis Key
+	 * @param db
+	 * @param key
+	 * @return
+	 */
+	public static boolean delKey(RedisAPI.Db db,String key) {
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		long value = 0;
+
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+			
+			jedis.select(db.toIntValue());
+			
+			value = jedis.del(key);
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return (value > 0);
+	}
+	//more.li 根据field值获取所有的key对应的value
+	public static List<String> hgetAll(RedisAPI.Db db, String key) {
+
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		List<String> value = null;
+
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+			jedis.select(db.toIntValue());
+
+			value = jedis.hvals(key);
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return value;
+	}
+	//more.li 有序集合的长度
+	public static long zcard(RedisAPI.Db db, String key){
+		JedisPool pool = null;
+		Jedis jedis = null;
+
+		long value = 0;
+
+		try {
+
+			pool = getPool(key);
+			jedis = pool.getResource();
+			jedis.select(db.toIntValue());
+
+			value = jedis.zcard(key);
+
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			logger.error(e.getMessage(), e);
+		} finally {
+			returnResource(pool, jedis);
+		}
+
+		return value;
+	}
+
+}

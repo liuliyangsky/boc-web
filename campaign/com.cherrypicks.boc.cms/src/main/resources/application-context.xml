@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="locations">
+			<list>
+				<value>classpath:config.properties</value>
+			    <value>classpath:ui.properties</value>
+				<value>classpath:datasource.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<import resource="classpath:datasource.xml" />
+	<import resource="classpath:server/persistence/tx-context.xml" />
+	<import resource="classpath:server/persistence/dao-context.xml" />
+	<import resource="classpath:server/service/service-context.xml" />
+	<import resource="classpath:push-notification-schedule.xml" />
+	
+	
+	<!-- DMI -->
+	<bean id="systemFunctionDmi" class="com.cherrypicks.boc.cms.dmi.SystemFunctionDMI" />
+	
+    <bean id="systemRoleDmi" class="com.cherrypicks.boc.cms.dmi.SystemRoleDMI"/>
+
+    <bean id="systemUserDmi" class="com.cherrypicks.boc.cms.dmi.SystemUserDMI"/>
+    
+    <bean id="campaginManagerDmi" class="com.cherrypicks.boc.cms.dmi.CampaginManagerDMI"/>
+    
+    <bean id="campaignCouponDmi" class="com.cherrypicks.boc.cms.dmi.CampaignCouponDMI"/>
+    
+    <bean id="activityAddressDmi" class="com.cherrypicks.boc.cms.dmi.ActivityAddressManagerDMI"/>
+    
+    <bean id="activityManagementDmi" class="com.cherrypicks.boc.cms.dmi.ActivityManagementDMI"/>
+    
+    <bean id="merchantManagementDmi" class="com.cherrypicks.boc.cms.dmi.MerchantManagementDMI"/>
+    
+    <bean id="languageDmi" class="com.cherrypicks.boc.cms.dmi.LanguageDMI"/>
+    
+    <bean id="validatorDmi" class="com.cherrypicks.boc.cms.validation.ValidatorDMI"></bean>
+   
+	<!-- Validation -->
+
+	<!-- auth -->
+	<bean id="authPagesMap" class="org.springframework.beans.factory.config.MapFactoryBean">
+		<property name="targetMapClass">
+			<value>java.util.HashMap</value>
+		</property>
+		<property name="sourceMap">
+			<map>
+				<entry key="SYSTEM_ROLE" value="${pages.systemRole}" />
+				<entry key="SYSTEM_USER" value="${pages.systemUser}" /> 
+                <entry key="TERMS_CONDITION" value="${pages.termsCondition}" />
+                <entry key="HOLD_CAMPAIGIN" value="${pages.holdCampaign}" />
+                <entry key="CAMPAIGIN_COUPON" value="${pages.campaignCoupon}"/>
+                <entry key="ACTIVITY_MANAGEMENT" value="${pages.activityManagement}" />
+                <entry key="ACTIVITY_ADDRESS" value="${pages.activityAddress}" />
+                <entry key="MERCHANT_MANAGEMENT" value="${pages.merchantManagement}" />
+                <entry key="MERCHANT_LANG_MAP" value="${pages.merchantLangMap}" />
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="authMenusMap" class="org.springframework.beans.factory.config.MapFactoryBean">
+        <property name="targetMapClass">
+            <value>java.util.HashMap</value>
+        </property>
+        <property name="sourceMap">
+            <map>
+            	<entry key="SYSTEM_ROLE" value="${menu.systemRole}" />
+                <entry key="SYSTEM_USER" value="${menu.systemUser}" />
+                <entry key="TERMS_CONDITION" value="${menu.termsCondition}" />
+                <entry key="HOLD_CAMPAIGIN" value="${menu.holdCampaign}" />
+             	<entry key="CAMPAIGIN_COUPON" value="${menu.campaignCoupon}"/>
+                <entry key="ACTIVITY_MANAGEMENT" value="${menu.activityManagement}" />
+                <entry key="ACTIVITY_ADDRESS" value="${menu.activityAddress}" />
+                <entry key="MERCHANT_MANAGEMENT" value="${menu.merchantManagement}" />
+                <entry key="MERCHANT_LANG_MAP" value="${menu.merchantLangMap}" />
+            </map>
+        </property>
+    </bean>
+</beans>

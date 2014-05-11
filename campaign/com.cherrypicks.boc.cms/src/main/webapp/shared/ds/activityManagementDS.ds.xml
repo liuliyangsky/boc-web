@@ -1,0 +1,19 @@
+<DataSource ID="activityManagementDS" serverType="generic">
+    <fields>
+    	<field name="id" type="text" title="id" hidden="true" primaryKey="true" />
+        <field name="status" type="integer" title="status">
+        	 <valueMap>
+                <value ID="1">Effective</value>
+                <value ID="0">No valid</value>
+            </valueMap>
+        </field>
+        <field name="startDate" type="date" title="Start Date" />
+        <field name="endDate" type="date" title="End Date" />
+        <field name="createdTime" type="dateTime" title="Created Time" />
+        <field name="updatedBy" type="text" title="Updated By" />
+        <field name="updatedTime" type="dateTime" title="Updated Time" />
+        <field name="activityAddressIds" type="long" title="addresses"/>
+        <field name="activityAddresses" type="text" title="addresses"/>
+    </fields>
+    <serverObject lookupStyle="spring" bean="activityManagementDmi" />
+</DataSource>

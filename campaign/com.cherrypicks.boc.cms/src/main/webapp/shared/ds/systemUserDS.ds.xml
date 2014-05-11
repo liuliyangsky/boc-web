@@ -1,0 +1,36 @@
+<DataSource ID="systemUserDS" serverType="generic">
+    <fields>
+        <field name="id" type="long" title="User ID" hidden="true" primaryKey="true" />
+        <field name="userName" type="text" title="User Name" required="true" length="32"/>
+        <field name="password" type="password" title="Password" required="true" length="32" />
+        <field name="mobile" type="text" title="Phone" length="32">
+        <validators>
+                <validator type="regexp" 
+                           expression="(^(0[0-9]{2,3}\-)?([2-9][0-9]{6,7})+(\-[0-9]{1,4})?$)|(^((\(\d{3}\))|(\d{3}\-))?(1[358]\d{9})$)"
+                           errorMessage="Invalid Phone"/>
+            </validators>
+        </field>
+        <field name="email" type="text" title="Email" length="255" >
+        	<validators>
+                <validator type="regexp" 
+                           expression="^([a-zA-Z0-9_.\-+])+@(([a-zA-Z0-9\-])+\.)+[a-zA-Z0-9]{2,4}$"
+                           errorMessage="Invalid email"/>
+            </validators>
+        </field>
+        <field name="status" type="integer" title="Status" >
+            <valueMap>
+                <value ID="1">Active</value>
+                <value ID="0">Inactive</value>
+            </valueMap>
+        </field>
+        <field name="createdBy" type="text" title="Created By" />
+        <field name="createdTime" type="dateTime" title="Created Time" />
+        <field name="updatedBy" type="text" title="Updated By" />
+        <field name="updatedTime" type="dateTime" title="Updated Time" />
+        
+        <field name="roles" type="long" title="Role"  />
+        <field name="roleNames" type="text" title="Role"  />
+    </fields>
+    
+    <serverObject lookupStyle="spring" bean="systemUserDmi" />
+</DataSource>

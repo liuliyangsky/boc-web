@@ -1,0 +1,61 @@
+<DataSource ID="campaginManagerDS" serverType="generic">
+    <fields>
+        <field name="id" type="long" title="ID" hidden="true" primaryKey="true" />
+        <field name="langCode" type="text" title="Language" width="20%" />
+        <field name="campaignType" type="integer" title="Campaigin Type">
+        	<valueMap>
+        		<value ID="0">CampaignType1</value>
+        		<value ID="1">CampaignType2</value>
+        	</valueMap>
+        </field>
+        <field name="playType" type="integer" title="Play Type">
+        	<valueMap>
+        		<value ID="0">playType1</value>
+        		<value ID="1">playType2</value>
+        	</valueMap>
+        </field>
+        <field name="campaignName" type="text" title="Campaign Name" width="20%"/>
+        <field name="icon" type="text" title="icon" width="20%"></field>
+        <field name="createdBy" type="text" title="Created By" />
+        <field name="createdTime" type="dateTime" title="Created Time" />
+        <field name="updatedBy" type="text" title="Updated By" />
+        <field name="updatedTime" type="dateTime" title="Updated Time" />
+        <field name="startDate" type="date" title="Start Date" required="true" width="20%">
+        	<validators>
+               	<validator type="compareSeriesDate" errorMessage="Start Date must be earlier than the End Date!" clientOnly="true"/>
+				<validator type="serverCustom" serverOnly="true">
+                    <serverObject lookupStyle="spring" bean="validatorDmi" methodName="seriesCondition"/>
+                    <errorMessage>Start Date must be later then or equals Main Series's Start Date!</errorMessage>
+                </validator> 
+                <validator type="serverCustom" serverOnly="true">
+                    <serverObject lookupStyle="spring" bean="validatorDmi" methodName="checkExistSubSeriesCondition"/>
+                    <errorMessage>Exist Sub Series for previous during!</errorMessage>
+                </validator>                                     
+                <validator type="serverCustom" serverOnly="true">
+                    <serverObject lookupStyle="spring" bean="validatorDmi" methodName="seriesStartDateLTEButterflyStartDate"/>
+                    <errorMessage>Start Date must be less than or equal butterfly Start Date which in this series.</errorMessage>
+                </validator>
+            </validators>	
+        </field>
+     <!--    <field name="startTime" type="time" title="Start Time" showTitle="false" required="true" width="20%" /> -->
+        <field name="endDate" type="date" title="End Date" required="true" width="20%">
+        	<validators>
+               	<validator type="compareDateTimeForForm" errorMessage="End Date must be later than the Start Date!" clientOnly="true"/> 
+				<validator type="serverCustom" serverOnly="true">
+                    <serverObject lookupStyle="spring" bean="validatorDmi" methodName="seriesCondition"/>
+                    <errorMessage>End Date must be earlier then or equals Main Series's End Date!</errorMessage>
+                </validator>  
+                <validator type="serverCustom" serverOnly="true">
+                    <serverObject lookupStyle="spring" bean="validatorDmi" methodName="checkExistSubSeriesCondition"/>
+                    <errorMessage>Exist Sub Series for previous during!</errorMessage>
+                </validator>                                        
+                <!-- <validator type="serverCustom" serverOnly="true">
+                    <serverObject lookupStyle="spring" bean="validatorDmi" methodName="seriesEndDateGTEButterflyExpiryDate"/>
+                    <errorMessage>End Date must be greater than or equal butterfly Expiry Date which in this series.</errorMessage>
+                </validator> -->
+            </validators>	
+        </field>
+        <!-- <field name="endTime" type="time" title="End Time" showTitle="false" required="true" width="20%" /> -->
+    </fields>
+    <serverObject lookupStyle="spring" bean="campaginManagerDmi" />
+</DataSource>

@@ -1,0 +1,24 @@
+<DataSource ID="termsConditionCNDS" serverConstructor="com.cherrypicks.boc.cms.dmi.TermsConditionCNDMI">
+    <fields>
+        <field name="id" type="sequence"   hidden="true" primaryKey="true" />
+        <field name="file_cn" type="binary" title="Html File(CN)" />
+		<field name="newFile_cn" type="binary" title="New Html File(CN)" >
+			<validators>
+				<validator type="custom" clientOnly="true">
+					<condition>
+						<![CDATA[
+							if (   !value.endsWith(".htm")
+								&& !value.endsWith(".HTM")
+								&& !value.endsWith(".html")
+								&& !value.endsWith(".HTML")) {
+									validator.errorMessage = "Expect file extension is .htm|.HTM|.html|.HTML.";
+									return false;
+								}
+							return true;
+						]]>
+					</condition>
+				</validator>
+			</validators>
+		</field>
+	</fields>
+</DataSource>

@@ -1,0 +1,9 @@
+<DataSource ID="systemFunctionDS" serverType="generic">
+    <fields>
+        <field name="id" type="long" title="Function ID" hidden="true" primaryKey="true" />
+        <field name="funcName" type="text" title="Function Name" required="true" />
+        <field name="funcCode" type="text" title="Function Code" required="true" />
+        <field name="funcDesc" type="text" title="Function Desc" width="100" />
+    </fields>
+    <serverObject lookupStyle="spring" bean="systemFunctionDmi" />
+</DataSource>
